@@ -1,0 +1,134 @@
+/* --- CSS/HOME.CSS (Flexbox & Psychology Colors) --- */
+/* This file styles ONLY the content on the HOMEPAGE. */
+
+/* --- 1. Hero Section --- */
+.hero {
+  background-color: #F9F7F3; /* Warm, Welcoming Beige */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2C5F2D; /* Primary Natural Green */
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #555555; /* Medium Gray */
+  margin-bottom: 30px;
+}
+
+/* --- 2. Home Section Styling (Light) --- */
+.home-section-light {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #FFFFFF; /* Clean White */
+}
+
+.home-section-light h2,
+.home-section-dark h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2A2A2A; /* Dark Charcoal */
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555555; /* Medium Gray */
+  margin-bottom: 40px;
+}
+
+.section-cta {
+  margin-top: 40px;
+}
+
+/* --- 3. Features Grid (How it works) --- */
+.features-grid {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.feature-card {
+  width: 32%; /* for 3 columns */
+  background: #FFFFFF; /* White */
+  border: 1px solid #EEEEEE; /* Light Border */
+  border-radius: 12px; /* Softer Edges */
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px); /* Add a subtle lift on hover */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px; /* 50% */
+  background: #EAF0E9; /* Very Light, Desaturated Green */
+  color: #2C5F2D; /* Primary Natural Green */
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 60px; /* Vertically center the number */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #2A2A2A; /* Dark Charcoal */
+}
+
+/* --- 4. Home Section Styling (Dark) --- */
+.home-section-dark {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #2C5F2D; /* Primary Natural Green */
+  color: #FFFFFF; /* White */
+}
+
+.home-section-dark h2 {
+  color: #FFFFFF; /* White */
+}
+
+.home-section-dark .section-subtitle {
+  color: #F9F7F3; /* Warm Beige (easy to read on green) */
+}
+
+/* --- 5. Conditions List --- */
+.conditions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.conditions-list li {
+  display: inline-block;
+  background: #FFFFFF; /* White */
+  color: #2C5F2D; /* Primary Natural Green */
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.conditions-list li:hover {
+  background: #F9F7F3; /* Warm Beige on hover */
+  transform: translateY(-2px);
+}

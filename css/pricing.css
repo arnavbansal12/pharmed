@@ -1,0 +1,106 @@
+/* --- CSS/PRICING.CSS --- */
+/* This file styles ONLY the "Pricing" page. */
+
+.page-hero {
+  background-color: #F9F7F3; /* Warm Beige */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  color: #2C5F2D; /* Primary Green */
+  margin-bottom: 10px;
+}
+
+.page-section {
+  padding: 60px 0;
+}
+
+/* --- 2. Pricing Grid --- */
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligns cards to the top */
+  gap: 40px;
+}
+
+.pricing-card {
+  width: 400px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  position: relative;
+}
+
+/* --- 3. Recommended Plan Styling --- */
+.pricing-card.recommended {
+  border: 2px solid #2C5F2D; /* Primary Green Border */
+  transform: scale(1.05); /* Makes it slightly bigger */
+}
+
+.recommended-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2C5F2D; /* Primary Green */
+  color: #FFFFFF;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.price span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2C5F2D; /* Primary Green */
+}
+
+.price-desc {
+  color: #555555;
+  margin-bottom: 30px;
+  height: 40px; /* Gives cards equal height */
+}
+
+.pricing-card .btn {
+  width: 100%; /* Makes button fill width */
+  margin-bottom: 30px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  text-align: left;
+}
+
+.pricing-card li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+/* CSS checkmark */
+.pricing-card li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2C5F2D; /* Primary Green */
+  font-weight: 700;
+}

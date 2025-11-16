@@ -1,0 +1,101 @@
+/* --- CSS/ABOUT.CSS --- */
+/* This file styles ONLY the "About Us" page. */
+
+/* --- 1. General Page Styles --- */
+.page-hero {
+  background-color: #F9F7F3; /* Warm Beige */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  color: #2C5F2D; /* Primary Green */
+  margin-bottom: 10px;
+}
+
+.page-section {
+  padding: 60px 0;
+}
+
+.page-section-light {
+  padding: 60px 0;
+  background-color: #F9F7F3; /* Warm Beige */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-subtitle.text-center {
+  margin-bottom: 40px;
+}
+
+
+/* --- 2. Mission Section --- */
+.mission-content {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between text and image */
+}
+
+.mission-text {
+  flex: 1; /* Takes up 50% of the space */
+}
+
+.mission-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mission-text p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.mission-image {
+  flex: 1; /* Takes up 50% of the space */
+}
+
+.mission-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* --- 3. Team Section --- */
+.team-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Space between cards */
+}
+
+.team-card {
+  width: 32%;
+  background: #FFFFFF; /* White */
+  border: 1px solid #EEEEEE;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 20px;
+}
+
+.team-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it a circle */
+  margin-bottom: 20px;
+  border: 4px solid #F9F7F3; /* Beige border */
+}
+
+.team-card h3 {
+  font-size: 1.25rem;
+  color: #2C5F2D; /* Primary Green */
+  margin-bottom: 5px;
+}
+
+.team-title {
+  font-weight: 600;
+  color: #555555;
+  margin-bottom: 15px;
+}

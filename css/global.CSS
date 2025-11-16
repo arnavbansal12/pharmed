@@ -1,0 +1,157 @@
+/* --- CSS/GLOBAL.CSS (Flexbox & Psychology Colors) --- */
+/* This file styles elements that are REUSED on ALL pages. */
+
+/* --- 1. Basic Setup & Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #2A2A2A; /* Dark Charcoal (Easy to read) */
+  background-color: #FFFFFF; /* Clean White */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- 2. Reusable Components --- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --- 3. Header & Navigation (Used on ALL pages) --- */
+.main-header {
+  background: #FFFFFF; /* Clean White */
+  border-bottom: 1px solid #EEEEEE; /* Softer border */
+  padding: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* Subtle shadow */
+}
+
+/* Use Flexbox to align logo and nav */
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2C5F2D; /* Primary Natural Green */
+  text-decoration: none;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 25px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #555555; /* Medium Gray */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #2C5F2D; /* Primary Natural Green */
+}
+
+/* --- 4. Buttons (Used on ALL pages) --- */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Softer corners */
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #2C5F2D; /* Primary Natural Green */
+  color: #FFFFFF; /* White */
+}
+
+.btn-primary:hover {
+  background-color: #244D24; /* Darker Green */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+  background-color: #F9F7F3; /* Warm Beige */
+  color: #2C5F2D; /* Primary Natural Green */
+  border: 1px solid #EAE8E4; /* Light border for definition */
+}
+
+.btn-secondary:hover {
+  background-color: #F1ECE2; /* Slightly darker beige */
+}
+
+/* --- 5. Footer (Used on ALL pages) --- */
+.main-footer {
+  background-color: #2A2A2A; /* Dark Charcoal */
+  color: #F9F7F3; /* Warm Beige (easy to read on dark) */
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+/* Use Flexbox to align footer columns */
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  width: 200px;
+  margin: 20px 0;
+}
+
+.footer-column h4 {
+  font-size: 1.1rem;
+  color: #FFFFFF; /* White */
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #F9F7F3; /* Warm Beige */
+}
+
+.footer-column a:hover {
+  color: #FFFFFF; /* White */
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #555555; /* Medium Gray */
+  font-size: 0.9rem;
+}

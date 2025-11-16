@@ -1,0 +1,91 @@
+/* --- CSS/HOW-IT-WORKS.CSS --- */
+/* This file styles ONLY the "How It Works" page. */
+
+.page-hero {
+  background-color: #F9F7F3; /* Warm Beige */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  color: #2C5F2D; /* Primary Green */
+  margin-bottom: 10px;
+}
+
+.page-section {
+  padding: 60px 0;
+}
+
+.page-section-light {
+  padding: 60px 0;
+  background-color: #F9F7F3; /* Warm Beige */
+}
+
+/* --- 2. Step Layout --- */
+.step-layout {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.step-image {
+  flex: 1; /* 50% width */
+}
+
+.step-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.step-text {
+  flex: 1; /* 50% width */
+}
+
+/* This is the class that flips the order */
+.step-layout.reversed {
+  flex-direction: row-reverse;
+}
+
+.step-number {
+  display: inline-block;
+  background-color: #EAF0E9; /* Light desaturated green */
+  color: #2C5F2D; /* Primary Green */
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.step-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.step-text p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.step-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.step-text li {
+  position: relative;
+  padding-left: 30px; /* Space for the checkmark */
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Creating a CSS checkmark */
+.step-text li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2C5F2D; /* Primary Green */
+  font-weight: 700;
+}

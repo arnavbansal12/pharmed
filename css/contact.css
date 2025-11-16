@@ -1,0 +1,93 @@
+/* --- CSS/CONTACT.CSS --- */
+/* This file styles ONLY the "Contact" page. */
+
+.page-hero {
+  background-color: #F9F7F3; /* Warm Beige */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  color: #2C5F2D; /* Primary Green */
+  margin-bottom: 10px;
+}
+
+.page-section {
+  padding: 60px 0;
+}
+
+/* --- 2. Contact Layout --- */
+.contact-layout {
+  display: flex;
+  gap: 40px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden; /* To contain the rounded corners */
+}
+
+/* --- 3. Contact Info (Left Column) --- */
+.contact-info {
+  flex: 1; /* 50% width */
+  padding: 40px;
+  background: #F9F7F3; /* Warm Beige */
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #2C5F2D; /* Primary Green */
+  margin-bottom: 15px;
+}
+
+.info-item {
+  margin-bottom: 25px;
+}
+
+.info-item h4 {
+  font-size: 1.1rem;
+  color: #2A2A2A;
+  margin-bottom: 5px;
+}
+
+.info-item p {
+  line-height: 1.7;
+}
+
+/* --- 4. Contact Form (Right Column) --- */
+.contact-form {
+  flex: 1.5; /* 60% width */
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2C5F2D; /* Primary Green */
+  box-shadow: 0 0 5px rgba(44,95,45,0.2);
+}
+
+.contact-form .btn {
+  width: 100%;
+}

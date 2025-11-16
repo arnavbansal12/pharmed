@@ -1,0 +1,48 @@
+/* --- CSS/SERVICES.CSS --- */
+/* This file styles ONLY the "Services" page. */
+
+.page-hero {
+  background-color: #F9F7F3; /* Warm Beige */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  color: #2C5F2D; /* Primary Green */
+  margin-bottom: 10px;
+}
+
+.page-section {
+  padding: 60px 0;
+}
+
+/* --- 2. Services Grid --- */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap; /* This is key! */
+  gap: 30px; /* This creates space between cards */
+}
+
+.service-card {
+  /* This makes 3 columns: (100% - (2 * 30px gap)) / 3 = 31% */
+  width: calc(33.333% - 20px); 
+  
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  color: #2C5F2D; /* Primary Green */
+  margin-bottom: 15px;
+}
