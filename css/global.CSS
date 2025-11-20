@@ -1,156 +1,211 @@
-/* --- CSS/GLOBAL.CSS (Flexbox & Psychology Colors) --- */
-/* This file styles elements that are REUSED on ALL pages. */
-/* --- 1. Basic Setup & Fonts --- */
+/* ===================================================== */
+/* GLOBAL.CSS - SHARED STYLES FOR ALL PAGES */
+/* ===================================================== */
+/* This file contains CSS that is used across ALL pages:
+   - Header & Navigation styling
+   - Footer styling
+   - Button styles
+   - Reusable components & utilities
+   
+   Usage: Link this file in the <head> of every HTML page
+   <link rel="stylesheet" href="css/global.CSS">
+*/
+
+/* ===================================================== */
+/* SECTION 1: FONT IMPORTS & GLOBAL RESET */
+/* ===================================================== */
+/* Import 'Inter' font family from Google Fonts in 3 weights: 400 (normal), 600 (semibold), 700 (bold) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+/* Universal selector (*) - applies to ALL elements */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box; /* Include padding & border in width/height calculations */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
 
+/* Body tag - styles the entire page background & default text */
 body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-  color: #2A2A2A; /* Dark Charcoal (Easy to read) */
-  background-color: #FFFFFF; /* Clean White */
+  font-family: 'Inter', sans-serif; /* Use Inter font, fallback to generic sans-serif */
+  line-height: 2; /* Space between lines of text (2 = double spacing) */
+  color: #2A2A2A; /* Dark Charcoal - main text color for readability */
+  background-color: #FFFFFF; /* Clean White - page background */
 }
 
+/* Image styling - makes images responsive */
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Images don't exceed container width */
+  height: auto; /* Height adjusts automatically to maintain aspect ratio */
 }
 
 /* --- 2. Reusable Components --- */
+/* Container class - centers content and sets max-width for all pages */
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1100px; /* Maximum width of content area */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 20px; /* Add padding on sides for mobile devices */
 }
 
-/* --- 3. Header & Navigation (Used on ALL pages) --- */
+/* ===================================================== */
+/* SECTION 3: HEADER & NAVIGATION (Used on ALL pages) */
+/* ===================================================== */
+/* Main header styling - appears at top of every page */
 .main-header {
-  background: #FFFFFF; /* Clean White */
-  border-bottom: 1px solid #EEEEEE; /* Softer border */
-  padding: 20px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* Subtle shadow */
+  background: #def1dc; /* Light green background color */
+  border-bottom: 1px solid #EEEEEE; /* Softer border for definition */
+  padding: 20px 0; /* Vertical spacing inside header */
+  box-shadow: 0 2px 8px rgba(7, 228, 32, 0.04); /* Subtle drop shadow */
 }
 
-/* Use Flexbox to align logo and nav */
+/* Flexbox layout for header - aligns logo and navigation */
 .main-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Push logo left, nav right */
+  margin-left: 10px; /* Add left margin */
+  align-items: center; /* Vertically center items */
 }
 
+/* Logo styling - text-based logo with gradient effect */
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 25px; /* Logo text size */
+  font-weight: 900; /* Extra bold text */
   color: #2C5F2D; /* Primary Natural Green */
-  text-decoration: none;
+  text-decoration: none; /* Remove underline from link */
+  background: linear-gradient(90deg, #2C5F2D, #A3C293, #2C5F2D, #A3C293); /* Gradient colors */
+  background-clip: text; /* Clip background to text shape (standard) */
+  -webkit-background-clip: text; /* Clip background to text shape (WebKit) */
+  -webkit-text-fill-color: transparent; 
+  /* Make text transparent to show gradient */
+  animation: move 3s linear infinite; /* Apply moving animation */
+  background-size: 50%; /* Size of gradient background */
 }
 
+/* Navigation list - horizontal menu items */
 .main-nav ul {
-  display: flex;
-  list-style: none;
+  display: flex; /* Arrange items horizontally */
+  list-style: none; /* Remove bullet points */
 }
 
+/* Navigation items - spacing between menu links */
 .main-nav li {
-  margin-left: 25px;
+  margin-left: 25px; /* Space between each menu item */
 }
 
+/* Navigation links styling */
 .main-nav a {
-  text-decoration: none;
-  color: #555555; /* Medium Gray */
-  font-weight: 600;
-  transition: color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  color: #555555; /* Medium Gray text */
+  font-weight: 900; /* Extra bold */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+  padding: 0px 10px; /* Padding around link text */
 }
 
+/* Navigation links - hover and active states */
 .main-nav a:hover,
 .main-nav a.active {
-  color: #2C5F2D; /* Primary Natural Green */
+  color: #2C5F2D; /* Change to Primary Natural Green */
+  text-shadow: 0 4px 6px rgba(74, 241, 3, 0.8); /* Add glowing shadow effect */
 }
 
 /* --- 4. Buttons (Used on ALL pages) --- */
+/* Base button styling - shared properties for all buttons */
 .btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border: none;
+  display: inline-block; /* Display as inline block for proper spacing */
+  padding: 12px 24px; /* Internal spacing around text */
+  border: none; /* Remove default border */
   border-radius: 8px; /* Softer corners */
-  text-decoration: none;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  text-decoration: none; /* Remove underline from button links */
+  font-weight: 600; /* Semi-bold text */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth animation for all property changes */
 }
 
+/* Primary button - main call-to-action buttons (green) */
 .btn-primary {
   background-color: #2C5F2D; /* Primary Natural Green */
-  color: #FFFFFF; /* White */
+  color: #FFFFFF; /* White text */
 }
 
+/* Primary button hover state */
 .btn-primary:hover {
-  background-color: #244D24; /* Darker Green */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #244D24; /* Darker Green on hover */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Add subtle shadow on hover */
 }
 
+/* Secondary button - alternative action buttons (beige) */
 .btn-secondary {
   background-color: #F9F7F3; /* Warm Beige */
-  color: #2C5F2D; /* Primary Natural Green */
+  color: #2C5F2D; /* Primary Natural Green text */
   border: 1px solid #EAE8E4; /* Light border for definition */
 }
 
+/* Secondary button hover state */
 .btn-secondary:hover {
-  background-color: #F1ECE2; /* Slightly darker beige */
+  background-color: #F1ECE2; /* Slightly darker beige on hover */
 }
 
 /* --- 5. Footer (Used on ALL pages) --- */
+/* Main footer styling - appears at bottom of every page */
 .main-footer {
-  background-color: #2A2A2A; /* Dark Charcoal */
-  color: #F9F7F3; /* Warm Beige (easy to read on dark) */
-  padding: 40px 0;
-  margin-top: 60px;
+  background-color: #2A2A2A; /* Dark Charcoal background */
+  color: #F9F7F3; /* Warm Beige text color (good contrast) */
+  padding: 40px 0; /* Vertical spacing inside footer */
+  margin-top: 60px; /* Space above footer */
 }
 
-/* Use Flexbox to align footer columns */
+/* Flexbox layout for footer columns */
 .main-footer .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Spread columns evenly */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
+/* Individual footer column styling */
 .footer-column {
-  width: 200px;
-  margin: 20px 0;
+  width: 200px; /* Fixed width for each column */
+  margin: 20px 0; /* Vertical spacing between columns */
 }
 
+/* Footer column headings */
 .footer-column h4 {
-  font-size: 1.1rem;
-  color: #FFFFFF; /* White */
-  margin-bottom: 15px;
+  font-size: 1.1rem; /* Slightly larger text */
+  color: #FFFFFF; /* White heading text */
+  margin-bottom: 15px; /* Space below heading */
 }
 
+/* Footer lists - remove default styling */
 .footer-column ul {
-  list-style: none;
+  list-style: none; /* Remove bullet points */
 }
 
+/* Footer list items */
 .footer-column li {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Space between list items */
 }
 
+/* Footer links styling */
 .footer-column a {
-  text-decoration: none;
-  color: #F9F7F3; /* Warm Beige */
+  text-decoration: none; /* Remove underline */
+  color: #F9F7F3; /* Warm Beige text */
 }
 
+/* Footer links hover state */
 .footer-column a:hover {
-  color: #FFFFFF; /* White */
-  text-decoration: underline;
+  color: #FFFFFF; /* Change to white on hover */
+  text-decoration: underline; /* Add underline on hover */
 }
 
+/* Footer bottom section - copyright info */
 .footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #555555; /* Medium Gray */
-  font-size: 0.9rem;
+  text-align: center; /* Center the copyright text */
+  margin-top: 40px; /* Space above */
+  padding-top: 20px; /* Space inside */
+  border-top: 1px solid #555555; /* Medium Gray border */
+  font-size: 0.9rem; /* Slightly smaller text */
+}
+
+/* Animation for logo gradient effect */
+@keyframes move{
+  0% {background-position: 0% 50%;} /* Start position */
+  100%{background-position: 100% 50%;} /* End position */
 }
