@@ -1,41 +1,23 @@
-/* ===================================================== */
-/* GLOBAL.CSS - SHARED STYLES FOR ALL PAGES */
-/* ===================================================== */
-/* This file contains CSS that is used across ALL pages:
-   - Header & Navigation styling
-   - Footer styling
-   - Button styles
-   - Reusable components & utilities
-   
-   Usage: Link this file in the <head> of every HTML page
-   <link rel="stylesheet" href="css/global.CSS">
-*/
+/* Global styles for all pages - header, footer, buttons, reusable components */
 
-/* ===================================================== */
-/* SECTION 1: FONT IMPORTS & GLOBAL RESET */
-/* ===================================================== */
-/* Import 'Inter' font family from Google Fonts in 3 weights: 400 (normal), 600 (semibold), 700 (bold) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-/* Universal selector (*) - applies to ALL elements */
 * {
-  box-sizing: border-box; /* Include padding & border in width/height calculations */
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default padding */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Body tag - styles the entire page background & default text */
 body {
-  font-family: 'Inter', sans-serif; /* Use Inter font, fallback to generic sans-serif */
-  line-height: 2; /* Space between lines of text (2 = double spacing) */
-  color: #2A2A2A; /* Dark Charcoal - main text color for readability */
-  background-color: #FFFFFF; /* Clean White - page background */
+  font-family: 'Inter', sans-serif;
+  line-height: 2;
+  color: #2A2A2A;
+  background-color: #FFFFFF;
 }
 
-/* Image styling - makes images responsive */
 img {
-  max-width: 100%; /* Images don't exceed container width */
-  height: auto; /* Height adjusts automatically to maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
 }
 
 /* --- 2. Reusable Components --- */
@@ -107,101 +89,85 @@ img {
   text-shadow: 0 4px 6px rgba(74, 241, 3, 0.8); /* Add glowing shadow effect */
 }
 
-/* --- 4. Buttons (Used on ALL pages) --- */
-/* Base button styling - shared properties for all buttons */
 .btn {
-  display: inline-block; /* Display as inline block for proper spacing */
-  padding: 12px 24px; /* Internal spacing around text */
-  border: none; /* Remove default border */
-  border-radius: 8px; /* Softer corners */
-  text-decoration: none; /* Remove underline from button links */
-  font-weight: 600; /* Semi-bold text */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: all 0.3s ease; /* Smooth animation for all property changes */
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Primary button - main call-to-action buttons (green) */
 .btn-primary {
-  background-color: #2C5F2D; /* Primary Natural Green */
-  color: #FFFFFF; /* White text */
+  background-color: #2C5F2D;
+  color: #FFFFFF;
 }
 
-/* Primary button hover state */
 .btn-primary:hover {
-  background-color: #244D24; /* Darker Green on hover */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Add subtle shadow on hover */
+  background-color: #244D24;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Secondary button - alternative action buttons (beige) */
 .btn-secondary {
-  background-color: #F9F7F3; /* Warm Beige */
-  color: #2C5F2D; /* Primary Natural Green text */
-  border: 1px solid #EAE8E4; /* Light border for definition */
+  background-color: #F9F7F3;
+  color: #2C5F2D;
+  border: 1px solid #EAE8E4;
 }
 
-/* Secondary button hover state */
 .btn-secondary:hover {
-  background-color: #F1ECE2; /* Slightly darker beige on hover */
+  background-color: #F1ECE2;
 }
 
-/* --- 5. Footer (Used on ALL pages) --- */
-/* Main footer styling - appears at bottom of every page */
 .main-footer {
-  background-color: #2A2A2A; /* Dark Charcoal background */
-  color: #F9F7F3; /* Warm Beige text color (good contrast) */
-  padding: 40px 0; /* Vertical spacing inside footer */
-  margin-top: 60px; /* Space above footer */
+  background-color: #2A2A2A;
+  color: #F9F7F3;
+  padding: 40px 0;
+  margin-top: 60px;
 }
 
-/* Flexbox layout for footer columns */
 .main-footer .container {
-  display: flex; /* Enable flexbox */
-  justify-content: space-between; /* Spread columns evenly */
-  flex-wrap: wrap; /* Allow wrapping on small screens */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wraps footer items on smaller screens */
 }
 
-/* Individual footer column styling */
 .footer-column {
-  width: 200px; /* Fixed width for each column */
-  margin: 20px 0; /* Vertical spacing between columns */
+  width: 200px;
+  margin: 20px 0;
 }
 
-/* Footer column headings */
 .footer-column h4 {
-  font-size: 1.1rem; /* Slightly larger text */
-  color: #FFFFFF; /* White heading text */
-  margin-bottom: 15px; /* Space below heading */
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  margin-bottom: 15px;
 }
 
-/* Footer lists - remove default styling */
 .footer-column ul {
-  list-style: none; /* Remove bullet points */
+  list-style: none;
 }
 
-/* Footer list items */
 .footer-column li {
-  margin-bottom: 10px; /* Space between list items */
+  margin-bottom: 10px;
 }
 
-/* Footer links styling */
 .footer-column a {
-  text-decoration: none; /* Remove underline */
-  color: #F9F7F3; /* Warm Beige text */
+  text-decoration: none;
+  color: #F9F7F3;
 }
 
-/* Footer links hover state */
 .footer-column a:hover {
-  color: #FFFFFF; /* Change to white on hover */
-  text-decoration: underline; /* Add underline on hover */
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
-/* Footer bottom section - copyright info */
 .footer-bottom {
-  text-align: center; /* Center the copyright text */
-  margin-top: 40px; /* Space above */
-  padding-top: 20px; /* Space inside */
-  border-top: 1px solid #555555; /* Medium Gray border */
-  font-size: 0.9rem; /* Slightly smaller text */
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #555555;
+  font-size: 0.9rem;
 }
 
 /* Animation for logo gradient effect */
