@@ -1,14 +1,37 @@
+<!-- 
+  =====================================================
+  PHARMED - HOLISTIC HEALTHCARE WEBSITE
+  Homepage (index.html)
+  =====================================================
+  This is the main landing page for Pharmed website.
+  It includes:
+  - Header with logo and navigation
+  - Hero section with call-to-action
+  - Features/How it works section
+  - Conditions we treat section
+  - Footer with links and social media
+  
+  Responsive Design: Mobile, Tablet, Desktop
+  ===================================================== 
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding - supports all languages and special characters -->
   <meta charset="UTF-8">
+  
+  <!-- Viewport meta tag - ensures proper scaling on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Page title - shown in browser tab and search results -->
   <title>Pharmed - Holistic Healthcare</title>
 
-  <!-- 1. The COMMON stylesheet (for header, footer, etc.) -->
-  <link rel="stylesheet" href="css/global.css">
+  <!-- 1. GLOBAL STYLESHEET - contains header, footer, buttons, and shared styles -->
+  <!-- Used on ALL pages of the website -->
+  <link rel="stylesheet" href="css/global.CSS">
   
-  <!-- 2. The PAGE-SPECIFIC stylesheet (for homepage content) -->
+  <!-- 2. PAGE-SPECIFIC STYLESHEET - contains styles unique to homepage -->
+  <!-- Only used on this index.html page -->
   <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
@@ -16,14 +39,22 @@
   <!-- ======================= -->
   <!--    HEADER (from global.css) -->
   <!-- ======================= -->
+  <!-- 
+    Header section that appears on every page
+    - Logo: Links back to homepage
+    - Navigation: Menu with links to all pages
+    - Styled by: global.CSS (responsive on all devices)
+  -->
   <header class="main-header">
     <div class="container">
       
+      <!-- Logo - links to homepage -->
       <a href="index.html" class="logo">Pharmed</a>
       
+      <!-- Main Navigation Menu -->
       <nav class="main-nav">
         <ul>
-          <!-- This is your 6-page navigation -->
+          <!-- Navigation links to all pages of the website -->
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="how-it-works.html">How It Works</a></li>
@@ -40,14 +71,21 @@
   <!-- ======================= -->
   <!--    MAIN PAGE CONTENT    -->
   <!-- ======================= -->
+  <!-- All content sections of the homepage -->
   <main>
     
     <!-- Hero Section (styled by home.css) -->
+    <!-- This is the main call-to-action section at the top of the page -->
     <section class="hero">
       <div class="container">
         <div class="hero-content">
+          <!-- Main headline - the core message of the website -->
           <h1>Modern Healthcare, Personalized For You</h1>
+          
+          <!-- Supporting text - explains the value proposition -->
           <p>We find the root cause of your health issues and create a plan that treats you as a whole person, not just a symptom.</p>
+          
+          <!-- Primary call-to-action button - encourages users to take action -->
           <a href="pricing.html" class="btn btn-primary">Get Started Today</a>
         </div>
       </div>
@@ -60,7 +98,6 @@
         <p class="section-subtitle">Our simple 3-step process puts you in control.</p>
         
         <div class="features-grid">
-          
           <div class="feature-card">
             <div class="feature-icon">1</div>
             <h3>1. Meet Your Team</h3>
@@ -87,11 +124,15 @@
     </section>
 
     <!-- Conditions We Treat (styled by home.css) -->
+    <!-- Section with dark background showing list of treatable conditions -->
     <section class="home-section-dark">
       <div class="container">
+        <!-- Section heading -->
         <h2>Conditions We Treat</h2>
+        <!-- Section subheading -->
         <p class="section-subtitle">From nagging digestive issues to chronic fatigue, we're here to help you heal.</p>
         
+        <!-- List of conditions we treat -->
         <ul class="conditions-list">
           <li>Digestive Issues</li>
           <li>Hormone Imbalances</li>
@@ -100,6 +141,7 @@
           <li>Mental Wellness</li>
           <li>Sleep & Energy</li>
         </ul>
+        <!-- Call-to-action button to view all services -->
         <div class="section-cta">
           <a href="services.html" class="btn btn-secondary">See All Services</a>
         </div>
@@ -111,14 +153,17 @@
   <!-- ======================= -->
   <!--    FOOTER (from global.css) -->
   <!-- ======================= -->
+  <!-- Footer section that appears on every page with company info and links -->
   <footer class="main-footer">
     <div class="container">
       
+      <!-- Footer Column 1: Company Info -->
       <div class="footer-column">
         <h4>Pharmed</h4>
         <p>Newton School of Technology</p>
       </div>
 
+      <!-- Footer Column 2: Company Links -->
       <div class="footer-column">
         <h4>Company</h4>
         <ul>
@@ -127,6 +172,7 @@
         </ul>
       </div>
 
+      <!-- Footer Column 3: Care/Service Links -->
       <div class="footer-column">
         <h4>Our Care</h4>
         <ul>
@@ -136,6 +182,7 @@
         </ul>
       </div>
 
+      <!-- Footer Column 4: Social Media Links -->
       <div class="footer-column">
         <h4>Follow Us</h4>
         <ul>
@@ -152,10 +199,10 @@
       </div>
 
     </div>
+    <!-- Footer bottom: Copyright information -->
     <div class="footer-bottom">
       <p>&copy; 2025 Pharmed. All rights reserved.</p>
     </div>
   </footer>
-
 </body>
 </html>

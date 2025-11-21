@@ -209,3 +209,156 @@ img {
   0% {background-position: 0% 50%;} /* Start position */
   100%{background-position: 100% 50%;} /* End position */
 }
+
+/* ===================================================== */
+/* SECTION 6: RESPONSIVE DESIGN (Mobile & Tablet) */
+/* ===================================================== */
+
+/* TABLETS (768px and below) */
+@media screen and (max-width: 768px) {
+  /* Header adjustments for tablets */
+  .main-header {
+    padding: 15px 0; /* Reduce padding on smaller screens */
+  }
+  
+  .main-header .container {
+    flex-direction: column; /* Stack logo above navigation */
+    gap: 15px; /* Space between logo and nav */
+    margin-left: 0; /* Remove left margin */
+  }
+  
+  /* Logo styling for tablets */
+  .logo {
+    font-size: 20px; /* Reduce logo size */
+  }
+  
+  /* Navigation adjustments for tablets */
+  .main-nav ul {
+    flex-wrap: wrap; /* Allow nav items to wrap */
+    justify-content: center; /* Center nav items */
+  }
+  
+  .main-nav li {
+    margin-left: 15px; /* Reduce spacing between nav items */
+  }
+  
+  .main-nav a {
+    font-size: 0.9rem; /* Reduce font size */
+    padding: 5px 8px; /* Reduce padding */
+  }
+  
+  /* Footer adjustments for tablets */
+  .main-footer .container {
+    justify-content: center; /* Center footer columns */
+    gap: 30px; /* Add gap between columns */
+  }
+  
+  .footer-column {
+    width: 150px; /* Reduce footer column width */
+    text-align: center; /* Center footer text */
+  }
+  
+  /* Container adjustments */
+  .container {
+    padding: 0 15px; /* Reduce side padding */
+  }
+}
+
+/* MOBILE PHONES (480px and below) */
+@media screen and (max-width: 480px) {
+  /* Body adjustments for mobile */
+  body {
+    line-height: 1.5; /* Reduce line height for small screens */
+  }
+  
+  /* Header adjustments for mobile */
+  .main-header {
+    padding: 10px 0; /* Minimal padding */
+    border-bottom: 1px solid #EEEEEE;
+  }
+  
+  .main-header .container {
+    flex-direction: column; /* Stack vertically */
+    gap: 10px; /* Small gap */
+  }
+  
+  /* Logo styling for mobile */
+  .logo {
+    font-size: 18px; /* Smaller logo text */
+  }
+  
+  /* Navigation for mobile */
+  .main-nav ul {
+    flex-direction: column; /* Stack navigation vertically */
+    gap: 10px; /* Space between menu items */
+  }
+  
+  .main-nav li {
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center menu items */
+  }
+  
+  .main-nav a {
+    font-size: 0.85rem; /* Smaller font */
+    padding: 8px 12px; /* Adjusted padding */
+    display: block; /* Make full width */
+  }
+  
+  /* Buttons for mobile */
+  .btn {
+    padding: 10px 20px; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller font */
+    width: 100%; /* Full width buttons */
+    text-align: center; /* Center button text */
+  }
+  
+  /* Footer for mobile */
+  .main-footer {
+    padding: 20px 0; /* Reduce padding */
+    margin-top: 40px; /* Reduce top margin */
+  }
+  
+  .main-footer .container {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center items */
+    gap: 20px; /* Space between sections */
+  }
+  
+  .footer-column {
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    margin: 10px 0; /* Reduce margin */
+  }
+  
+  .footer-column h4 {
+    font-size: 1rem; /* Slightly smaller heading */
+  }
+  
+  .footer-column ul {
+    text-align: center; /* Center links */
+  }
+  
+  .footer-column li {
+    margin-bottom: 8px; /* Reduce spacing */
+  }
+  
+  /* Container for mobile */
+  .container {
+    padding: 0 10px; /* Minimal side padding */
+    max-width: 100%; /* Full width */
+  }
+  
+  /* Reduce heading sizes on mobile */
+  h1 {
+    font-size: 1.8rem; /* Smaller main heading */
+    line-height: 1.3; /* Tighter line height */
+  }
+  
+  h2 {
+    font-size: 1.4rem; /* Smaller section heading */
+  }
+  
+  h3 {
+    font-size: 1.1rem; /* Smaller subheading */
+  }
+}
