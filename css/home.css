@@ -126,3 +126,29 @@
   background: #F9F7F3;
   transform: translateY(-2px); /* Lifts pill on hover */
 }
+
+/* --- css/home.css --- */
+
+.health-tip-section {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #eaf3e9; /* Light green background */
+}
+
+.tip-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px auto; /* Centers the box */
+  max-width: 600px;
+  border: 1px solid #cce0c9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Health tip text styling */
+#health-tip-display {
+  color: #2C5F2D;
+  font-size: 1.5rem;
+  font-weight: 600;
+  min-height: 60px; /* Prevents jumping when text changes */
+}
