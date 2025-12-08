@@ -18,3 +18,4 @@ function getNewTip() {
   displayElement.innerText = healthTips[randomIndex];
   
 }
+

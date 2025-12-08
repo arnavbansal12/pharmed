@@ -293,3 +293,130 @@ img {
     font-size: 1.1rem;
   }
 }
+
+/* --- CSS/GLOBAL.CSS: Chatbot Styling --- */
+
+/* Base Floating Button */
+#chatbot-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000; /* Ensure it stays above all other content */
+}
+
+/* Common Button Styles */
+.chat-btn {
+  background-color: #2C5F2D; /* Primary Natural Green */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px; /* Pill Shape */
+  padding: 12px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(44, 95, 45, 0.4); /* Green Shadow */
+  transition: background-color 0.3s ease;
+}
+
+.chat-btn:hover {
+  background-color: #244D24; /* Darker Green */
+}
+
+/* Chat Window Container */
+.chat-window {
+  display: none; /* Hidden by default, JS will show it */
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 350px;
+  height: 500px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+  background: #2C5F2D; /* Primary Natural Green */
+  color: #FFFFFF;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.chat-close-btn {
+  background: none;
+  box-shadow: none;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Messages Area */
+.chat-messages {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #F9F7F3; /* Warm Beige Background */
+}
+
+/* Individual Message Bubble Styles */
+.message {
+  max-width: 80%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 12px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.message p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the AI's Message */
+.message.received {
+  background: #EAF0E9; /* Very Light Green */
+  align-self: flex-start;
+  border-top-left-radius: 0;
+}
+
+/* Styles for the User's Message */
+.message.sent {
+  background: #2C5F2D; /* Primary Natural Green */
+  color: #FFFFFF;
+  margin-left: auto;
+  align-self: flex-end;
+  border-top-right-radius: 0;
+}
+
+/* Input Bar */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #EEEEEE;
+  background: #FFFFFF;
+}
+
+#user-input {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.send-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: none;
+}

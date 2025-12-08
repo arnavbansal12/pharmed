@@ -190,6 +190,35 @@
       <p>&copy; 2025 Pharmed. All rights reserved.</p>
     </div>
   </footer>
-  <script src="javascript/home.js";></script>
+
+<div id="chatbot-container">
+  
+  <button id="chat-toggle" class="chat-btn">
+    💬 AI Health Assistant
+  </button>
+
+  <div id="chat-window" class="chat-window">
+    
+    <div class="chat-header">
+      <span class="chat-title">Pharmed Assistant</span>
+      <button id="chat-close" class="chat-btn chat-close-btn">&times;</button>
+    </div>
+    
+    <div id="chat-messages" class="chat-messages">
+      <div class="message received">
+        <p>Hello! I'm your AI Health Assistant. How can I help you today?</p>
+      </div>
+    </div>
+    
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Ask about health..." autocomplete="off">
+      <button id="send-btn" class="chat-btn send-btn">Send</button>
+    </div>
+
+  </div>
+</div>
+
+  <script src="javascript/home.js"></script>
+  <script src="javascript/script.js"></script>
 </body>
 </html>
